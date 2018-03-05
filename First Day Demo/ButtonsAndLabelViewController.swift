@@ -10,26 +10,29 @@ import UIKit
 
 class ButtonsAndLabelViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  var count = 0
 
-        // Do any additional setup after loading the view.
-    }
+  @IBOutlet weak var countLabel: UILabel!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+  @IBAction func preseedIncrement(_ sender: Any) {
+    print("You pressed increment")
+    count += 1
+    updateView()
+  }
 
-    /*
-    // MARK: - Navigation
+  
+  @IBAction func pressedDecrement(_ sender: Any) {
+    print("You pressed decrement")
+    count -= 1
+    updateView()
+  }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    updateView()
+  }
 
+  func updateView() {
+    countLabel.text = "Count = \(count)"
+  }
 }

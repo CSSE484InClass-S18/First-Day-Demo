@@ -145,13 +145,52 @@
                     <view key="view" contentMode="scaleToFill" id="03C-vr-teb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count = 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r91-4E-uwh">
+                                <rect key="frame" x="87.5" y="343" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="CeQ-GP-YVX"/>
+                                    <constraint firstAttribute="height" constant="45" id="sn2-Xa-tk8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smg-OT-UB5">
+                                <rect key="frame" x="118" y="242" width="138" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Increment"/>
+                                <connections>
+                                    <action selector="preseedIncrement:" destination="Mxm-ou-T8D" eventType="touchUpInside" id="Z3Y-V2-gHf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsS-lQ-ImL">
+                                <rect key="frame" x="111" y="438" width="152" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Decrement"/>
+                                <connections>
+                                    <action selector="pressedDecrement:" destination="Mxm-ou-T8D" eventType="touchUpInside" id="2nn-GA-wvj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="smg-OT-UB5" firstAttribute="centerX" secondItem="r91-4E-uwh" secondAttribute="centerX" id="5Az-J6-vaQ"/>
+                            <constraint firstItem="r91-4E-uwh" firstAttribute="centerX" secondItem="a8W-lg-bhT" secondAttribute="centerX" id="8cY-lC-r72"/>
+                            <constraint firstItem="fsS-lQ-ImL" firstAttribute="top" secondItem="r91-4E-uwh" secondAttribute="bottom" constant="50" id="TVe-eD-cAJ"/>
+                            <constraint firstItem="fsS-lQ-ImL" firstAttribute="centerX" secondItem="r91-4E-uwh" secondAttribute="centerX" id="f87-Dy-NEt"/>
+                            <constraint firstItem="r91-4E-uwh" firstAttribute="top" secondItem="smg-OT-UB5" secondAttribute="bottom" constant="50" id="k1B-Uo-qn5"/>
+                            <constraint firstItem="r91-4E-uwh" firstAttribute="centerY" secondItem="a8W-lg-bhT" secondAttribute="centerY" id="v9G-H3-5oe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a8W-lg-bhT"/>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="r91-4E-uwh" id="niF-1B-jNS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1N-5g-6j3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1401" y="284"/>
+            <point key="canvasLocation" x="1400.8" y="283.80809595202402"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OoZ-63-zLK">
