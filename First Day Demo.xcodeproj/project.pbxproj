@@ -12,6 +12,9 @@
 		FDB47C95204DA69D006FF6DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB47C93204DA69D006FF6DC /* Main.storyboard */; };
 		FDB47C97204DA69D006FF6DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB47C96204DA69D006FF6DC /* Assets.xcassets */; };
 		FDB47C9A204DA69D006FF6DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB47C98204DA69D006FF6DC /* LaunchScreen.storyboard */; };
+		FDB47CA2204DABC0006FF6DC /* ButtonsAndLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB47CA1204DABC0006FF6DC /* ButtonsAndLabelViewController.swift */; };
+		FDB47CA4204DABCD006FF6DC /* TouchEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB47CA3204DABCD006FF6DC /* TouchEventsViewController.swift */; };
+		FDB47CA6204DABDB006FF6DC /* StudentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB47CA5204DABDB006FF6DC /* StudentsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FDB47C96204DA69D006FF6DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB47C99204DA69D006FF6DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB47C9B204DA69D006FF6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB47CA1204DABC0006FF6DC /* ButtonsAndLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAndLabelViewController.swift; sourceTree = "<group>"; };
+		FDB47CA3204DABCD006FF6DC /* TouchEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchEventsViewController.swift; sourceTree = "<group>"; };
+		FDB47CA5204DABDB006FF6DC /* StudentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				FDB47C96204DA69D006FF6DC /* Assets.xcassets */,
 				FDB47C98204DA69D006FF6DC /* LaunchScreen.storyboard */,
 				FDB47C9B204DA69D006FF6DC /* Info.plist */,
+				FDB47CA1204DABC0006FF6DC /* ButtonsAndLabelViewController.swift */,
+				FDB47CA3204DABCD006FF6DC /* TouchEventsViewController.swift */,
+				FDB47CA5204DABDB006FF6DC /* StudentsTableViewController.swift */,
 			);
 			path = "First Day Demo";
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB47C92204DA69D006FF6DC /* ViewController.swift in Sources */,
+				FDB47CA4204DABCD006FF6DC /* TouchEventsViewController.swift in Sources */,
 				FDB47C90204DA69D006FF6DC /* AppDelegate.swift in Sources */,
+				FDB47CA6204DABDB006FF6DC /* StudentsTableViewController.swift in Sources */,
+				FDB47CA2204DABC0006FF6DC /* ButtonsAndLabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
