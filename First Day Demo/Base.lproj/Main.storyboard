@@ -130,13 +130,22 @@
                     <view key="view" contentMode="scaleToFill" id="N9f-ue-CEB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RoseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Ots-3C-9j3">
+                                <rect key="frame" x="29" y="96" width="87" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Yit-u5-yeY"/>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="Ots-3C-9j3" id="rkH-uN-4pb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ca-cc-v3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2086" y="676"/>
+            <point key="canvasLocation" x="2085.5999999999999" y="675.11244377811101"/>
         </scene>
         <!--Buttons And Label View Controller-->
         <scene sceneID="Bgn-H5-43f">
@@ -209,4 +218,7 @@
             <point key="canvasLocation" x="-359" y="801"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RoseLogo" width="208" height="214"/>
+    </resources>
 </document>
